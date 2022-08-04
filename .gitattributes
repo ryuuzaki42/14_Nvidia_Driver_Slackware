@@ -1,0 +1,2 @@
+final_packages/nvidia-kernel-515.57_5.15.38-x86_64-1_JB.txz filter=lfs diff=lfs merge=lfs -text
+final_packages/nvidia-driver-515.57_multilib-x86_64-1_JB.txz filter=lfs diff=lfs merge=lfs -text
