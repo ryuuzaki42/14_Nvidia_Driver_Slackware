@@ -6,18 +6,23 @@
 
 ## Links
 
-[http://www.nvidia.com/object/unix.html](http://www.nvidia.com/object/unix.html)
+https://docs.slackware.com/howtos:hardware:nvidia_optimus
 
-[https://docs.slackware.com/howtos:hardware:nvidia_optimus](https://docs.slackware.com/howtos:hardware:nvidia_optimus)
+https://docs.slackware.com/howtos:hardware:nvidia_optimus#official_optimus_support_with_the_nvidia_proprietary_driver
 
-[https://docs.slackware.com/howtos:hardware:proprietary_graphics_drivers](https://docs.slackware.com/howtos:hardware:proprietary_graphics_drivers)
+https://docs.slackware.com/howtos:hardware:proprietary_graphics_drivers
 
-[https://wiki.archlinux.org/index.php/bumblebee#Configuration](https://wiki.archlinux.org/index.php/bumblebee#Configuration)
+https://download.nvidia.com/XFree86/Linux-x86_64/450.80.02/README/primerenderoffload.html
 
-[https://wiki.debian.org/NVIDIA Optimus](https://wiki.debian.org/NVIDIA\ Optimus)
+https://wiki.archlinux.org/index.php/bumblebee#Configuration
+
+https://wiki.debian.org/NVIDIA%20Optimus
+
+http://www.nvidia.com/object/unix.html
+
 
 # Alternative - use Bumblebee
-[https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages/](https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages/)
+https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages/
 
 ## How Install
 
@@ -25,7 +30,7 @@
     git clone https://github.com/ryuuzaki42/14_nvidia_drive_SlackBuilds_Packages.git
 
 ### Or download
-[https://github.com/ryuuzaki42/14_nvidia_drive_SlackBuilds_Packages/archive/master.zip](https://github.com/ryuuzaki42/14_nvidia_drive_SlackBuilds_Packages/archive/master.zip)
+https://github.com/ryuuzaki42/14_nvidia_drive_SlackBuilds_Packages/archive/master.zip
 
 ### 1 Login as root and upgradepkg xf86-video-nouveau-blacklist
     su -
@@ -86,5 +91,6 @@ Should display your integrated GPU's' vendor as opposed to NVIDIA (e.g., Intel).
 
 ### Build using scripts based in:
 https://slackbuilds.org/repository/15.0/system/nvidia-kernel/
+
 https://slackbuilds.org/repository/15.0/system/nvidia-driver/
     COMPAT32="yes" ./nvidia-driver.SlackBuild
