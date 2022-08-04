@@ -1,25 +1,19 @@
 # Nvidia driver compiled to Slackware 15.0
 
+## Tested in one laptop with Nvidia GeForce 940MX
+
 ## Version
     Nvidia driver: 515.57
     Slackware 15.0 Kernel: 5.15.38
 
 ## Links
-
-https://docs.slackware.com/howtos:hardware:nvidia_optimus
-
-https://docs.slackware.com/howtos:hardware:nvidia_optimus#official_optimus_support_with_the_nvidia_proprietary_driver
-
-https://docs.slackware.com/howtos:hardware:proprietary_graphics_drivers
-
-https://download.nvidia.com/XFree86/Linux-x86_64/450.80.02/README/primerenderoffload.html
-
-https://wiki.archlinux.org/index.php/bumblebee#Configuration
-
-https://wiki.debian.org/NVIDIA%20Optimus
-
-http://www.nvidia.com/object/unix.html
-
+1. https://docs.slackware.com/howtos:hardware:nvidia_optimus
+2. https://docs.slackware.com/howtos:hardware:nvidia_optimus#official_optimus_support_with_the_nvidia_proprietary_driver
+3. https://docs.slackware.com/howtos:hardware:proprietary_graphics_drivers
+4. https://download.nvidia.com/XFree86/Linux-x86_64/450.80.02/README/primerenderoffload.html
+5. https://wiki.archlinux.org/index.php/bumblebee#Configuration
+6. https://wiki.debian.org/NVIDIA%20Optimus
+7. http://www.nvidia.com/object/unix.html
 
 # Alternative - use Bumblebee
 https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages/
