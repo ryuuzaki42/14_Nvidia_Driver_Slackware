@@ -8,11 +8,13 @@
 
 [http://www.nvidia.com/object/unix.html](http://www.nvidia.com/object/unix.html)
 
-[https://wiki.archlinux.org/index.php/bumblebee#Configuration](https://wiki.archlinux.org/index.php/bumblebee#Configuration)
-
 [https://docs.slackware.com/howtos:hardware:nvidia_optimus](https://docs.slackware.com/howtos:hardware:nvidia_optimus)
 
 [https://docs.slackware.com/howtos:hardware:proprietary_graphics_drivers](https://docs.slackware.com/howtos:hardware:proprietary_graphics_drivers)
+
+[https://wiki.archlinux.org/index.php/bumblebee#Configuration](https://wiki.archlinux.org/index.php/bumblebee#Configuration)
+
+[https://wiki.debian.org/NVIDIA Optimus](https://wiki.debian.org/NVIDIA\ Optimus)
 
 # Alternative - use Bumblebee
 [https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages/](https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages/)
@@ -35,28 +37,28 @@
     upgradepkg --install-new --reinstall nvidia-driver-*z nvidia-kernel-*z
 
 ### 3 Add the config file
-    nano /etc/X11/xorg.conf.d/21-LAR-nvidia-screens.conf
+```
+echo 'Section "ServerLayout"
+    Identifier "layout"
+    Option "AllowNVIDIAGPUScreens"
+    Screen 0 "iGPU"
+EndSection
 
-    Section "ServerLayout"
-        Identifier "layout"
-        Option "AllowNVIDIAGPUScreens"
-        Screen 0 "iGPU"
-    EndSection
+Section "Device"
+    Identifier "iGPU"
+    Driver "modesetting"
+EndSection
 
-    Section "Device"
-        Identifier "iGPU"
-        Driver "modesetting"
-    EndSection
+Section "Screen"
+    Identifier "iGPU"
+    Device "iGPU"
+EndSection
 
-    Section "Screen"
-        Identifier "iGPU"
-        Device "iGPU"
-    EndSection
-
-    Section "Device"
-        Identifier "nvidia"
-        Driver "nvidia"
-    EndSection
+Section "Device"
+    Identifier "nvidia"
+    Driver "nvidia"
+EndSection' > /etc/X11/xorg.conf.d/21-LAR-nvidia-screens.conf
+```
 
 ### Reboot to test
     xrandr --listproviders
