@@ -20,11 +20,9 @@ https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages/
 
 ## How Install
 
-### 0 - clone the repository or donwload
-    git clone https://github.com/ryuuzaki42/14_nvidia_drive_SlackBuilds_Packages.git
-
-### Or download
-https://github.com/ryuuzaki42/14_nvidia_drive_SlackBuilds_Packages/archive/master.zip
+### Download the latest version that matches with the kernel in use and unzip:
+    14_Nvidia_Driver_Slackware_Laptop-<driver version>_<kernel version>.zip
+https://github.com/ryuuzaki42/14_Nvidia_Driver_Slackware_Laptop/releases/
 
 ### 1 Login as root and upgradepkg xf86-video-nouveau-blacklist
     su -
@@ -32,7 +30,6 @@ https://github.com/ryuuzaki42/14_nvidia_drive_SlackBuilds_Packages/archive/maste
     upgradepkg upgrade/xf86-video-nouveau-blacklist-1.0-noarch-1.txz
 
 ### 2 Install/upgrade nvidia-driver and nvidia-kernel
-    cd ../
     upgradepkg --install-new --reinstall nvidia-driver-*z nvidia-kernel-*z
 
 ### 3 Add the config file
