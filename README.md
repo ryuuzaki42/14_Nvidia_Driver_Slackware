@@ -3,7 +3,7 @@
 ## Tested in one laptop with Nvidia GeForce 940MX
 
 ## Version
-    Nvidia driver: 515.57
+    Nvidia driver: 515.65.01
     Slackware 15.0 Kernel: 5.15.38
 
 ## Links
