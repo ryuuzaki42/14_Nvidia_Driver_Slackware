@@ -4,7 +4,7 @@
 
 ## Version
     Nvidia driver: 515.65.01
-    Slackware 15.0 Kernel: 5.15.38
+    Slackware 15.0 Kernel: 5.15.63
 
 ## Links
 1. https://docs.slackware.com/howtos:hardware:nvidia_optimus
@@ -23,6 +23,9 @@ https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages/
 ### 1 Download the latest release version that matches with the kernel in use and unzip:
     14_Nvidia_Driver_Slackware_Laptop_<driver version>_<kernel version>.zip
 https://github.com/ryuuzaki42/14_Nvidia_Driver_Slackware_Laptop/releases/
+
+## The latest update
+https://github.com/ryuuzaki42/14_Nvidia_Driver_Slackware_Laptop/releases/latest
 
 ### 2 Login as root and upgradepkg xf86-video-nouveau-blacklist
 
