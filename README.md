@@ -3,8 +3,10 @@
 ## Tested in one laptop with Nvidia GeForce 940MX
 
 ## Version
-    Nvidia driver: 515.65.01
+    Nvidia driver: 515.76
     Slackware 15.0 Kernel: 5.15.63
+
+### Last update: 06/10/2022
 
 ## Links
 1. https://docs.slackware.com/howtos:hardware:nvidia_optimus
@@ -65,10 +67,10 @@ EndSection' > /etc/X11/xorg.conf.d/21-LAR-nvidia-screens.conf
     xrandr --listproviders
 Should display a provider named NVIDIA-G0 (for “NVIDIA GPU screen 0”)
 
-    __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia glxinfo | grep 'OpenGL vendor'
+    __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia glxinfo | grep "OpenGL vendor"
 Should display: "OpenGL vendor string: NVIDIA Corporation"
 
-    glxinfo | grep 'OpenGL vendor'
+    glxinfo | grep "OpenGL vendor"
 Should display your integrated GPU's' vendor as opposed to NVIDIA (e.g., Intel).
 
 ## To run games on Steam
