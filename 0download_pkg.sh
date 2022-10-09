@@ -21,12 +21,14 @@
 #
 # Descrição: Script to download the "last" version of NVIDIA drivers "source"
 #
-# Last update: 06/10/2022
+# Last update: 09/10/2022
 #
 #https://slackbuilds.org/repository/15.0/system/nvidia-kernel/
 #https://slackbuilds.org/repository/15.0/system/nvidia-driver/
+#
+set -eEuo pipefail
+trap 'echo -e "\\n\\n\e[1;31mError at line $LINENO\033[0m - Command:\\n\e[1;31m$BASH_COMMAND\033[0m\\n"' ERR
 
-set -e
 echo -e "\n# Download source to build nvidia driver #"
 
 versionDl="515.76"
