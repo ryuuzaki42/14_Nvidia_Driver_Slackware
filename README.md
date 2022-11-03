@@ -12,7 +12,7 @@
 1. https://docs.slackware.com/howtos:hardware:nvidia_optimus
 2. https://docs.slackware.com/howtos:hardware:nvidia_optimus#official_optimus_support_with_the_nvidia_proprietary_driver
 3. https://docs.slackware.com/howtos:hardware:proprietary_graphics_drivers
-4. https://download.nvidia.com/XFree86/Linux-x86_64/450.80.02/README/primerenderoffload.html
+4. https://download.nvidia.com/XFree86/Linux-x86_64/515.76/README/primerenderoffload.html
 5. https://wiki.archlinux.org/index.php/bumblebee#Configuration
 6. https://wiki.debian.org/NVIDIA%20Optimus
 7. http://www.nvidia.com/object/unix.html
