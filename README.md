@@ -1,21 +1,25 @@
+
 # Nvidia driver compiled to Slackware 15.0
 
-## Tested in one laptop with Nvidia GeForce 940MX
-
 ## Version
-    Nvidia driver: 515.76
+    Nvidia driver (Production Branch Version): 515.86.01
     Slackware 15.0 Kernel: 5.15.63
 
-### Last update: 06/10/2022
+### Last update: 23/11/2022
+
+## Tested in laptops with Nvidia GeForce 930MX and 940MX
+    # lspci -v | grep "NVIDIA"
+
+    $ nvidia-smi -L
 
 ## Links
 1. https://docs.slackware.com/howtos:hardware:nvidia_optimus
 2. https://docs.slackware.com/howtos:hardware:nvidia_optimus#official_optimus_support_with_the_nvidia_proprietary_driver
 3. https://docs.slackware.com/howtos:hardware:proprietary_graphics_drivers
-4. https://download.nvidia.com/XFree86/Linux-x86_64/515.76/README/primerenderoffload.html
+4. https://download.nvidia.com/XFree86/Linux-x86_64/515.86.01/README/primerenderoffload.html
 5. https://wiki.archlinux.org/index.php/bumblebee#Configuration
 6. https://wiki.debian.org/NVIDIA%20Optimus
-7. http://www.nvidia.com/object/unix.html
+7. https://www.nvidia.com/object/unix.html
 
 # Alternative - use Bumblebee
 https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages/
@@ -67,6 +71,9 @@ EndSection' > /etc/X11/xorg.conf.d/21-LAR-nvidia-screens.conf
     xrandr --listproviders
 Should display a provider named NVIDIA-G0 (for “NVIDIA GPU screen 0”)
 
+    glxinfo | grep vendor
+Should display: "OpenGL vendor string: Intel"
+
     __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia glxinfo | grep "OpenGL vendor"
 Should display: "OpenGL vendor string: NVIDIA Corporation"
 
@@ -83,7 +90,7 @@ https://wiki.debian.org/NVIDIA%20Optimus#Using_NVIDIA_PRIME_Render_Offload
     __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia mangohud %command%
 
 ### If you use slackpkg+, set nouveau to greylist:
-http://slakfinder.org/slackpkg+.html
+https://slakfinder.org/slackpkg+.html
 
     echo "xf86-video-nouveau" >> /etc/slackpkg/greylist
 
