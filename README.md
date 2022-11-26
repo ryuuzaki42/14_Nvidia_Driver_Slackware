@@ -1,10 +1,10 @@
 # Nvidia driver compiled to Slackware 15.0
 
-## Version
+### Version
     Nvidia driver (Production Branch Version): 515.86.01
     Slackware 15.0 Kernel: 5.15.63
 
-### Last update: 27/11/2022
+#### Last update: 27/11/2022
 
 ## Tested in laptops with Nvidia GeForce 930MX and 940MX
     # lspci -v | grep "NVIDIA"
@@ -84,14 +84,14 @@ https://wiki.debian.org/NVIDIA%20Optimus#Using_NVIDIA_PRIME_Render_Offload
 ### With mangohud
     __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia mangohud %command%
 
-### If you use slackpkg+, set nouveau to greylist:
+## If you use slackpkg+, set nouveau to greylist:
 https://slakfinder.org/slackpkg+.html
 
     echo "xf86-video-nouveau" >> /etc/slackpkg/greylist
 
-### After a kernel update will need to rebuilt nvidia-kernel
+## After a kernel update will need to rebuilt nvidia-kernel
 
-### Build using scripts based on:
+## Build using scripts based on:
 https://slackbuilds.org/repository/15.0/system/nvidia-kernel/
 
 https://slackbuilds.org/repository/15.0/system/nvidia-driver/ with COMPAT32="yes"
