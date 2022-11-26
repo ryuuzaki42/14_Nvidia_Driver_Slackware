@@ -1,11 +1,10 @@
-
 # Nvidia driver compiled to Slackware 15.0
 
 ## Version
     Nvidia driver (Production Branch Version): 515.86.01
     Slackware 15.0 Kernel: 5.15.63
 
-### Last update: 23/11/2022
+### Last update: 27/11/2022
 
 ## Tested in laptops with Nvidia GeForce 930MX and 940MX
     # lspci -v | grep "NVIDIA"
@@ -30,11 +29,10 @@ https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages/
     14_Nvidia_Driver_Slackware_Laptop_<driver version>_<kernel version>.zip
 https://github.com/ryuuzaki42/14_Nvidia_Driver_Slackware_Laptop/releases/
 
-## The latest update
+### The latest update
 https://github.com/ryuuzaki42/14_Nvidia_Driver_Slackware_Laptop/releases/latest
 
 ### 2 Login as root and upgradepkg xf86-video-nouveau-blacklist
-
     cd 14_Nvidia_Driver_Slackware_Laptop*/final_packages/
     su
     upgradepkg upgrade/xf86-video-nouveau-blacklist-1.0-noarch-1.txz
@@ -66,19 +64,17 @@ Section "Device"
 EndSection' > /etc/X11/xorg.conf.d/21-LAR-nvidia-screens.conf
 ```
 
-### 5 Reboot to test
+### 5 Reboot your system to take effect
 
+## Test
     xrandr --listproviders
 Should display a provider named NVIDIA-G0 (for “NVIDIA GPU screen 0”)
 
-    glxinfo | grep vendor
-Should display: "OpenGL vendor string: Intel"
+    glxinfo | grep "OpenGL vendor"
+Should display your integrated GPU's' vendor as opposed to NVIDIA (e.g., Intel)
 
     __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia glxinfo | grep "OpenGL vendor"
 Should display: "OpenGL vendor string: NVIDIA Corporation"
-
-    glxinfo | grep "OpenGL vendor"
-Should display your integrated GPU's' vendor as opposed to NVIDIA (e.g., Intel).
 
 ## To run games on Steam
 https://wiki.debian.org/NVIDIA%20Optimus#Using_NVIDIA_PRIME_Render_Offload
@@ -86,7 +82,6 @@ https://wiki.debian.org/NVIDIA%20Optimus#Using_NVIDIA_PRIME_Render_Offload
     __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia %command%
 
 ### With mangohud
-
     __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia mangohud %command%
 
 ### If you use slackpkg+, set nouveau to greylist:
@@ -94,7 +89,7 @@ https://slakfinder.org/slackpkg+.html
 
     echo "xf86-video-nouveau" >> /etc/slackpkg/greylist
 
-### After a kernel update need will to rebuilt nvidia-kernel
+### After a kernel update will need to rebuilt nvidia-kernel
 
 ### Build using scripts based on:
 https://slackbuilds.org/repository/15.0/system/nvidia-kernel/
