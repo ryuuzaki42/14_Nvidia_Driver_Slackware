@@ -2,9 +2,9 @@
 
 ### Version
     Nvidia driver (Production Branch Version): 525.89.02
-    Slackware 15.0 Kernel: 5.15.80
+    Slackware 15.0 Kernel: 5.15.94
 
-#### Last update: 26/01/2023
+#### Last update: 18/02/2023
 
 ## Tested in laptops with Nvidia GeForce 930MX and 940MX
     # lspci -v | grep "NVIDIA"
