@@ -20,7 +20,7 @@
 6. https://wiki.debian.org/NVIDIA%20Optimus
 7. https://www.nvidia.com/object/unix.html
 
-# Alternative - use Bumblebee
+## Alternative - use Bumblebee
 https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages/
 
 ## How Install
