@@ -1,7 +1,7 @@
 # Nvidia driver compiled to Slackware 15.0
 
 ### Version
-    Nvidia driver (Production Branch Version): 535.98
+    Nvidia driver (Production Branch Version): 535.104.05
     Slackware 15.0 Kernel: 5.15.117
 
 #### Last update: 23/08/2023
@@ -15,7 +15,7 @@
 1. https://docs.slackware.com/howtos:hardware:nvidia_optimus
 2. https://docs.slackware.com/howtos:hardware:nvidia_optimus#official_optimus_support_with_the_nvidia_proprietary_driver
 3. https://docs.slackware.com/howtos:hardware:proprietary_graphics_drivers
-4. https://download.nvidia.com/XFree86/Linux-x86_64/535.98/README/primerenderoffload.html
+4. https://download.nvidia.com/XFree86/Linux-x86_64/535.104.05/README/primerenderoffload.html
 5. https://wiki.archlinux.org/title/NVIDIA
 6. https://wiki.debian.org/NVIDIA%20Optimus
 7. https://www.nvidia.com/object/unix.html
@@ -41,28 +41,7 @@ https://github.com/ryuuzaki42/14_Nvidia_Driver_Slackware_Laptop/releases/latest
     upgradepkg --install-new --reinstall nvidia-driver-*z nvidia-kernel-*z
 
 ### 4 Add the config file
-```
-echo 'Section "ServerLayout"
-    Identifier "layout"
-    Option "AllowNVIDIAGPUScreens"
-    Screen 0 "iGPU"
-EndSection
-
-Section "Device"
-    Identifier "iGPU"
-    Driver "modesetting"
-EndSection
-
-Section "Screen"
-    Identifier "iGPU"
-    Device "iGPU"
-EndSection
-
-Section "Device"
-    Identifier "dGPU"
-    Driver "nvidia"
-EndSection' > /etc/X11/xorg.conf.d/21-LAR-nvidia-screens.conf
-```
+    cp 21-LAR-nvidia-screens.conf /etc/X11/xorg.conf.d/21-LAR-nvidia-screens.conf
 
 ### 5 Reboot your system to take effect
 

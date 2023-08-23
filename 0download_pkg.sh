@@ -28,7 +28,7 @@
 #
 echo -e "\n# Download source to build nvidia driver #"
 
-versionDl="535.98"
+versionDl="535.104.05"
 linkDl="https://download.nvidia.com/XFree86"
 
 download_x86_64=("$linkDl/Linux-x86_64/$versionDl/NVIDIA-Linux-x86_64-$versionDl.run"
@@ -38,12 +38,12 @@ download_x86_64=("$linkDl/Linux-x86_64/$versionDl/NVIDIA-Linux-x86_64-$versionDl
 "$linkDl/nvidia-settings/nvidia-settings-$versionDl.tar.bz2"
 "$linkDl/nvidia-xconfig/nvidia-xconfig-$versionDl.tar.bz2")
 
-md5sum_x86_64=("0b164dec19707a39a35cb6975d73d2a4"
-"63308063801e98f7c92b08644b7894e7"
-"1af6100913a1dcca585c4ef3bd570c6c"
-"6fd0cf79f6541879cee8612baede0a53"
-"08bbfd25b4e9d22397588cd84d6ae516"
-"ffe4d5895060ba71f3592c312205902b")
+md5sum_x86_64=("0bb10ef32e86d5e1ad37b710dac6e079"
+"c9ae41074cdebbb2352d044357520960"
+"43ea93973dd29b35b0dfaa11de1d5bf3"
+"d68a1453e1c1e05abfb1d5530027a887"
+"7b1855d9a291754a750906cdb84770af"
+"3bb1660ccb0a47e9dbeae16c194de345")
 
 mkdir -p "source_$versionDl/nvidia-driver/nvidia-kernel"
 cd "source_$versionDl/nvidia-driver/" || exit
