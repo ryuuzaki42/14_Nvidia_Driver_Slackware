@@ -1,4 +1,4 @@
 # md5sum upgrade/xf86-video-nouveau-blacklist-1.0-noarch-1.txz nvidia-kernel-*_JB.txz nvidia-driver-*_JB.txz >> md5sum
 43fcefff2ec75ae06a3bcbbb407de8d1  upgrade/xf86-video-nouveau-blacklist-1.0-noarch-1.txz
-0a0269da95a5c142f442a02fc2ca030a  nvidia-kernel-535.146.02_5.15.145-x86_64-1_JB.txz
-d71dcf3072b89feae7ce7e752e34239d  nvidia-driver-535.146.02_multilib-x86_64-1_JB.txz
+9fc6f33183f32a416e2dc3de01a444f1  nvidia-kernel-535.154.05_5.15.145-x86_64-2_JB.txz
+40ee2294454da28b17eba681413e21f2  nvidia-driver-535.154.05_multilib-x86_64-1_JB.txz
