@@ -2,9 +2,9 @@
 
 ### Version
     Nvidia driver (Production Branch Version): 550.90.07
-    Slackware 15.0 Kernel: 5.15.160
+    Slackware 15.0 Kernel: 5.15.161
 
-#### Last update: 09/06/2024
+#### Last update: 21/06/2024
 
 ## Tested in laptops with Nvidia GeForce 930MX and 940MX
     # lspci -v | grep "NVIDIA"
@@ -26,15 +26,15 @@ https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages/
 ## How Install
 
 ### 1 Download the latest release version that matches with the kernel in use and extract:
-    14_Nvidia_Driver_Slackware_Laptop_<driver version>_<kernel version>.zip
+    14_Nvidia_Driver_Slackware_<driver version>_<kernel version>.zip
 
-https://github.com/ryuuzaki42/14_Nvidia_Driver_Slackware_Laptop/releases/
+https://github.com/ryuuzaki42/14_Nvidia_Driver_Slackware/releases/
 
 ### The latest update
-https://github.com/ryuuzaki42/14_Nvidia_Driver_Slackware_Laptop/releases/latest
+https://github.com/ryuuzaki42/14_Nvidia_Driver_Slackware/releases/latest
 
 ### 2 Login as root and upgradepkg xf86-video-nouveau-blacklist
-    cd 14_Nvidia_Driver_Slackware_Laptop*/final_packages/
+    cd 14_Nvidia_Driver_Slackware*/final_packages/
     su
     upgradepkg upgrade/xf86-video-nouveau-blacklist-1.0-noarch-1.txz
 
