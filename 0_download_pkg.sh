@@ -21,14 +21,14 @@
 #
 # Descrição: Script to download the "last" version of NVIDIA drivers "source"
 #
-# Last update: 26/12/2024
+# Last update: 23/03/2025
 #
 # https://slackbuilds.org/repository/15.0/system/nvidia-kernel/
 # https://slackbuilds.org/repository/15.0/system/nvidia-driver/ with COMPAT32="yes"
 #
 echo -e "\n# Download source to build nvidia driver #"
 
-versionDl="565.77"
+versionDl="570.133.07"
 echo "Version: \"$versionDl\""
 linkDl="https://download.nvidia.com/XFree86"
 
@@ -39,12 +39,12 @@ download_x86_64=("$linkDl/Linux-x86_64/$versionDl/NVIDIA-Linux-x86_64-$versionDl
 "$linkDl/nvidia-settings/nvidia-settings-$versionDl.tar.bz2"
 "$linkDl/nvidia-xconfig/nvidia-xconfig-$versionDl.tar.bz2")
 
-md5sum_x86_64=("48d9a5b5999d0f30ec8326c94b34945e"
-"b1ebf85cbc16dd8f950b5e2def4d2e35"
-"97f1b2001951bef9182590c8a2f40b09"
-"a720065ae2617b7201fda6ee1731e94f"
-"f7146d6be1a11e951444b066e883d3c0"
-"879e36d67c76b6012a2c1dcc67fc94d3")
+md5sum_x86_64=("27c62c49264e1a1da92ebcede9cf76bc"
+"3f5dcb9cbb961f4c5f9c270445c7ea58"
+"f0324056d943150717adf2f6e9001124"
+"deb0e40a2674c93d94d8bfb741dc9061"
+"71c86e1fb3d71e412e8b65ebb628b28a"
+"f1c053ead29e1a5afe605cb5f80470cf")
 
 mkdir -p "source_$versionDl/nvidia-driver/nvidia-kernel"
 cd "source_$versionDl/nvidia-driver/" || exit
