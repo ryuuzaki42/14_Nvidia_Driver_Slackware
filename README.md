@@ -75,3 +75,8 @@ https://slakfinder.org/slackpkg+.html
 https://slackbuilds.org/repository/15.0/system/nvidia-kernel/
 
 https://slackbuilds.org/repository/15.0/system/nvidia-driver/ with COMPAT32="yes"
+
+## Build legacy580 using scripts based on:
+https://slackbuilds.org/repository/15.0/system/nvidia-legacy580-kernel/
+
+https://slackbuilds.org/repository/15.0/system/nvidia-legacy580-driver/ with COMPAT32="yes"

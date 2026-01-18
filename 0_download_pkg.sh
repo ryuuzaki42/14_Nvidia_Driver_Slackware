@@ -26,7 +26,7 @@
 # https://slackbuilds.org/repository/15.0/system/nvidia-kernel/
 # https://slackbuilds.org/repository/15.0/system/nvidia-driver/ with COMPAT32="yes"
 #
-# # https://slackbuilds.org/repository/15.0/system/nvidia-legacy580-kernel/
+# https://slackbuilds.org/repository/15.0/system/nvidia-legacy580-kernel/
 # https://slackbuilds.org/repository/15.0/system/nvidia-legacy580-driver/ with COMPAT32="yes"
 #
 echo -e "\n# Download source to build nvidia driver #"
