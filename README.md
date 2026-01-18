@@ -71,12 +71,21 @@ https://slakfinder.org/slackpkg+.html
 
 ## After a kernel update will need to rebuilt nvidia-kernel
 
-## Build using scripts based on:
+---
+## Built using scripts based on:
 https://slackbuilds.org/repository/15.0/system/nvidia-kernel/
 
 https://slackbuilds.org/repository/15.0/system/nvidia-driver/ with COMPAT32="yes"
 
-## Build legacy580 using scripts based on:
+---
+## Built legacy580 using scripts based on:
+```
+EOL NOTE: The 580.xx series will be the last to support the Maxwell
+and Pascal GPUs (GTX 745,750; GT(X) 8xx,9xx,10xx cards) as well as
+Volta (Titan series).  When the next driver series is released, this
+will become nvidia-legacy580.
+```
+
 https://slackbuilds.org/repository/15.0/system/nvidia-legacy580-kernel/
 
 https://slackbuilds.org/repository/15.0/system/nvidia-legacy580-driver/ with COMPAT32="yes"
