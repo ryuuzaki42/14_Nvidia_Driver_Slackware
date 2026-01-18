@@ -1,0 +1,4 @@
+# md5sum upgrade/xf86-video-nouveau-blacklist-1.0-noarch-1.txz nvidia-legacy580-kernel-*_JB.txz nvidia-legacy580-driver-*_JB.txz >> md5sum
+43fcefff2ec75ae06a3bcbbb407de8d1  upgrade/xf86-video-nouveau-blacklist-1.0-noarch-1.txz
+a42250a98ec2bfaed50f7fb0a1312e7a  nvidia-legacy580-kernel-580.126.09_5.15.193-x86_64-1_JB.txz
+e128f179afde1e0e48d15e7de768b554  nvidia-legacy580-driver-580.126.09_multilib-x86_64-1_JB.txz
