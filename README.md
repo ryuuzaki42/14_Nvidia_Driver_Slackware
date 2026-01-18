@@ -1,10 +1,10 @@
 # Nvidia driver and kernel compiled to Slackware
 
 ## Version
-    Nvidia driver: 580.105.08
+    Nvidia driver: 580.126.09
     Slackware 15.0 Kernel: 5.15.193
 
-### Last update: 23/11/2025
+### Last update: 18/01/2026
 
 ## Tested in laptops with Nvidia GeForce 930MX and 940MX
     # lspci -v | grep "NVIDIA"
@@ -15,7 +15,7 @@
 1. https://docs.slackware.com/howtos:hardware:nvidia_optimus
 2. https://docs.slackware.com/howtos:hardware:nvidia_optimus#official_optimus_support_with_the_nvidia_proprietary_driver
 3. https://docs.slackware.com/howtos:hardware:proprietary_graphics_drivers
-4. https://download.nvidia.com/XFree86/Linux-x86_64/580.105.08/README/primerenderoffload.html
+4. https://download.nvidia.com/XFree86/Linux-x86_64/580.126.09/README/primerenderoffload.html
 5. https://wiki.archlinux.org/title/NVIDIA
 6. https://wiki.debian.org/NVIDIA%20Optimus
 7. https://www.nvidia.com/object/unix.html
