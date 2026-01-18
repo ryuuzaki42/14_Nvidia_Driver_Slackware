@@ -1,3 +1,5 @@
 source*/
 final_packages/nvidia-kernel-*.txz
 final_packages/nvidia-driver-*.txz
+final_packages_legacy580/nvidia-legacy580-kernel-*.txz
+final_packages_legacy580/nvidia-legacy580-driver-*.txz
