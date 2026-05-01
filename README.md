@@ -1,10 +1,10 @@
 # Nvidia driver and kernel compiled to Slackware
 
 ## Version
-    Nvidia driver: 580.126.09
+    Nvidia driver: 580.142
     Slackware 15.0 Kernel: 5.15.193
 
-### Last update: 18/01/2026
+### Last update: 01/05/2026
 
 ## Tested in laptops with Nvidia GeForce 930MX and 940MX
     # lspci -v | grep "NVIDIA"
@@ -15,7 +15,7 @@
 1. https://docs.slackware.com/howtos:hardware:nvidia_optimus
 2. https://docs.slackware.com/howtos:hardware:nvidia_optimus#official_optimus_support_with_the_nvidia_proprietary_driver
 3. https://docs.slackware.com/howtos:hardware:proprietary_graphics_drivers
-4. https://download.nvidia.com/XFree86/Linux-x86_64/580.126.09/README/primerenderoffload.html
+4. https://download.nvidia.com/XFree86/Linux-x86_64/580.142/README/primerenderoffload.html
 5. https://wiki.archlinux.org/title/NVIDIA
 6. https://wiki.debian.org/NVIDIA%20Optimus
 7. https://www.nvidia.com/object/unix.html
@@ -39,7 +39,7 @@ https://github.com/ryuuzaki42/14_Nvidia_Driver_Slackware/releases/latest
     upgradepkg upgrade/xf86-video-nouveau-blacklist-1.0-noarch-1.txz
 
 ### 3. Install / Upgrade nvidia-driver and nvidia-kernel
-    upgradepkg --install-new --reinstall nvidia-driver-*z nvidia-kernel-*z
+    upgradepkg --install-new --reinstall nvidia-*driver-*z nvidia-*kernel-*z
 
 ### 4. Add the configuration file
     cp 21-LAR-nvidia-screens.conf /etc/X11/xorg.conf.d/21-LAR-nvidia-screens.conf
@@ -89,3 +89,5 @@ will become nvidia-legacy580.
 https://slackbuilds.org/repository/15.0/system/nvidia-legacy580-kernel/
 
 https://slackbuilds.org/repository/15.0/system/nvidia-legacy580-driver/ with COMPAT32="yes"
+
+ - The Wine libraries are now installed by default
