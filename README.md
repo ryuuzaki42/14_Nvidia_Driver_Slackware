@@ -1,10 +1,11 @@
+
 # Nvidia driver and kernel compiled to Slackware
 
 ## Version
     Nvidia driver: 580.142
-    Slackware 15.0 Kernel: 5.15.204
+    Slackware 15.0 Kernel: 5.15.205
 
-### Last update: 03/05/2026
+### Last update: 09/05/2026
 
 ## Tested in laptops with Nvidia GeForce 930MX and 940MX
     # lspci -v | grep "NVIDIA"
@@ -82,7 +83,7 @@ https://slackbuilds.org/repository/15.0/system/nvidia-driver/ with COMPAT32="yes
 ```
 EOL NOTE: The 580.xx series will be the last to support the Maxwell
 and Pascal GPUs (GTX 745,750; GT(X) 8xx,9xx,10xx cards) as well as
-Volta (Titan series).  When the next driver series is released, this
+Volta (Titan series). When the next driver series is released, this
 will become nvidia-legacy580.
 ```
 
