@@ -94,4 +94,4 @@ https://slackbuilds.org/repository/15.0/system/nvidia-legacy580-driver/ with COM
  - The Wine libraries are now installed by default
 
  - Starting with 580.159.03, the kernel build system now requires pahole, which is in -current but not in 15.0.
-    upgradepkg --install-new --reinstall pahole-*_JB.txz
+    - ```upgradepkg --install-new --reinstall pahole-*_JB.txz```
