@@ -15,7 +15,7 @@
 # COMERCIABILIDADE ou ADEQUAÇÃO A UM PROPÓSITO ESPECÍFICO.
 # Consulte a Licença Pública Geral do GNU para mais detalhes.
 #
-# Descrição: Script to download the "last" version of NVIDIA drivers "source"
+# Script: Download the "last" version of NVIDIA "source" drivers
 #
 # Last update: 02/09/2026
 #
