@@ -3,9 +3,9 @@
 
 ## Version
     Nvidia driver: 580.178.04
-    Slackware 15.0 Kernel: 5.15.209
+    Slackware 15.0 Kernel: 5.15.223
 
-### Last update: 24/09/2026
+### Last update: 23/10/2026
 
 ## Tested in laptops with Nvidia GeForce 930MX and 940MX
     # lspci -v | grep "NVIDIA"
@@ -56,6 +56,9 @@ Should display your integrated GPU's' vendor as opposed to NVIDIA (e.g., Intel)
 
     __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia glxinfo | grep "OpenGL vendor"
 Should display: "OpenGL vendor string: NVIDIA Corporation"
+
+### If not work, try reinstall the packages
+    upgradepkg --install-new --reinstall nvidia-*driver-*_JB.txz nvidia-*kernel-*_JB.txz
 
 ## To run games on Steam
 https://wiki.debian.org/NVIDIA%20Optimus#Using_NVIDIA_PRIME_Render_Offload
