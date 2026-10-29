@@ -17,7 +17,7 @@
 #
 # Script: Download the "last" version of NVIDIA "source" drivers
 #
-# Last update: 24/09/2026
+# Last update: 29/10/2026
 #
 # https://slackbuilds.org/repository/15.0/system/nvidia-kernel/
 # https://slackbuilds.org/repository/15.0/system/nvidia-driver/ with COMPAT32="yes"
@@ -27,7 +27,7 @@
 #
 echo -e "\n# Download source to build nvidia driver #"
 
-versionDl="580.178.04"
+versionDl="580.196.07"
 echo "Version: \"$versionDl\""
 
 linkDl="https://download.nvidia.com/XFree86"
@@ -40,13 +40,12 @@ download_x86_64=("$linkDl/Linux-x86_64/$versionDl/NVIDIA-Linux-x86_64-$versionDl
 "$linkDl/nvidia-settings/nvidia-settings-$versionDl.tar.bz2"
 "$linkDl/nvidia-xconfig/nvidia-xconfig-$versionDl.tar.bz2")
 
-md5sum_x86_64=("27a27276ca0bfad7881d635cb3388849"
-"00b414bf3b930a8de674796983e2107f"
-"48dfe3df153d9437195f3ed2754c30d0"
-"bb592f2e8a7c4d28bde08dffb9908353"
-"dae6e63e1aedd8683339677680513476"
-"2c606deb3c09f0aab3267d559888147c"
-"7bf74ea1d07730bb560e390351dc0fdf")
+md5sum_x86_64=("6bef12d75a82393c160697a90f80d56b"
+"8c0837d864c301ae712a5dd4ed9f1cdc"
+"fa4b35a66a608f507e6de1bcfb1df340"
+"7e68cba31d13ca2dc3071159733d4718"
+"bfb9ef62dbee75e171f5542052fa41e6"
+"19b98b1e9da75e0b57c4d2264b4ee179")
 
 #legacy='' # Default
 legacy="-legacy580" # Legacy version
